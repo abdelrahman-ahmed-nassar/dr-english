@@ -1,0 +1,309 @@
+/* Responsive Styles for Dr. English Website */
+
+/* Large Screens (Desktops) */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.75rem;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    flex: 0 0 100%;
+  }
+
+  .hero-content {
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-text {
+    flex: 0 0 100%;
+  }
+
+  .about-image {
+    margin-bottom: var(--space-md);
+    text-align: center;
+  }
+
+  .about-image::before {
+    transform: rotate(0deg);
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+
+  .about-text h2,
+  .about-text .subtitle {
+    text-align: center;
+  }
+
+  .methodology h3 {
+    font-size: 1.8rem;
+  }
+
+  .methodology-steps {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Small Screens (Mobile Landscape) */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex: 0 0 80%;
+  }
+
+  /* Menu toggle styling moved to style.css */
+
+  /* Mobile nav styling moved to style.css */
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .features-grid,
+  .methodology-steps {
+    gap: var(--space-md);
+  }
+
+  .feature-card {
+    margin-bottom: var(--space-sm);
+  }
+
+  .download-options {
+    gap: var(--space-lg);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  .footer-links h3::after,
+  .footer-newsletter h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .methodology h3 {
+    font-size: 1.6rem;
+  }
+
+  .step-content h4 {
+    font-size: 1.1rem;
+  }
+
+  /* Contact grid becomes single column */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra Small Screens (Mobile Portrait) */
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding-top: calc(var(--space-xl) + 70px);
+    padding-bottom: var(--space-xl);
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: var(--space-sm);
+    width: 100%;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .methodology {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+  }
+
+  .methodology h3 {
+    font-size: 1.4rem;
+  }
+
+  .methodology-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-md);
+  }
+
+  .step-number {
+    margin-bottom: var(--space-xs);
+  }
+
+  .step-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .download-card {
+    flex: 0 0 100%;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    padding: var(--space-md);
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-item .detail {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-lg);
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-newsletter form {
+    flex-direction: column;
+    gap: var(--space-xs);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-newsletter input,
+  .footer-newsletter button {
+    width: 100%;
+    border-radius: var(--radius-md);
+  }
+}
+
+/* Very Small Screens */
+@media screen and (max-width: 375px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
