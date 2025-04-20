@@ -443,15 +443,7 @@ nav ul li a:focus::after,
 nav ul li a.active::after {
   width: 100%;
 }
-.nav-footer, .nav-header, .close-menu {
-  display: none;
-}
 
-@media screen and (max-width: 768px) {
-  .nav-footer, .nav-header, .close-menu {
-    display: block;
-  }
-}
 .menu-toggle {
   display: none;
   background: none;
